@@ -1,0 +1,337 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Gallery | Flying Wonder</title>
+    <meta name="description" content="Birding enthusiast in Mangaluru, passionate about photography, loves to travel and explore new places." />
+
+    <meta property="og:url" content="http://www.flyingwonder.com" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Birding Mangalore, Traveling Photography in Coastal Karnataka" />
+    <meta property="og:description" content="Birding enthusiast in Mangaluru, passionate about photography, loves to travel and explore new places." />
+    <meta property="og:image" content="http://www.flyingwonder.com/images/slide.jpg" />
+
+    <meta name="format-detection" content="telephone=no">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/stuck.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/touchTouch.css">
+    <link rel="stylesheet" href="css/camera.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="css/Icomoon/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/main.css" rel="stylesheet" type="text/css" />
+    <link href="css/sim-prev-anim.css" rel="stylesheet" type="text/css" />
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-migrate-1.1.1.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/superfish.js"></script>
+    <script src="js/jquery.equalheights.js"></script>
+    <script src="js/jquery.mobilemenu.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/tmStickUp.js"></script>
+    <script src="js/jquery.ui.totop.js"></script>
+    <script src="js/touchTouch.jquery.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/sForm.js"></script>
+    <script src="js/camera.js"></script>
+    <script>
+        $(document).ready(function () {
+            jQuery('#camera_wrap').camera({
+                loader: false,
+                pagination: false,
+                minHeight: '200',
+                thumbnails: false,
+                height: '39,0625%',
+                caption: true,
+                navigation: true,
+                fx: 'mosaic'
+            });
+            var owl = $("#owl");
+            owl.owlCarousel({
+                items: 7, //10 items above 1000px browser width
+                itemsDesktop: [995, 5], //5 items between 1000px and 901px
+                itemsDesktopSmall: [767, 3], // betweem 900px and 601px
+                itemsTablet: [700, 3], //2 items between 600 and 0
+                itemsMobile: [479, 2], // itemsMobile disabled - inherit from itemsTablet option
+                navigation: true,
+            });
+            $().UItoTop({ easingType: 'easeOutQuart' });
+            $('#stuck_container').tmStickUp({});
+            $('.gallery a.gal_item').touchTouch();
+            var path = location.pathname;
+            var current = path.split("/").pop();
+            $('.tab a').each(function () {
+                var $this = $(this);
+                if (current !== "") {
+                    if ($this.attr('href') != undefined) {
+                        //    if ($this.attr('name').indexOf(current) !== -1) {
+                        if ($this.attr('href').toLowerCase().indexOf(current.toLowerCase()) != -1) {
+                            $(".tab").removeClass("current");
+                            $(this).closest('li').addClass('current');
+                            $this.addClass('current');
+                        }
+                    }
+                }
+                else {
+                    if ($this.attr('href').toLowerCase() == "/home") {
+                        $(".tab").removeClass("current");
+                        $(this).closest('li').addClass('current');
+                        $this.addClass('current');
+                    }
+                }
+            });
+
+        });
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7ZBDRN0BP1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-7ZBDRN0BP1');
+    </script>
+</head>
+<body>
+    <div class="container body-content">
+        <header>
+            <div id="stuck_container">
+                <div class="container">
+                    <div class="row">
+                        <div class="grid_12">
+                            <h1>
+                                <a href="/home">
+                                    <img class="logo" src="images/logo.png" alt="Flying Wonder">
+                                </a>
+                            </h1>
+                            <div class="menu_block">
+                                <nav class="horizontal-nav full-width horizontalNav-notprocessed">
+                                    <ul class="sf-menu">
+                                        <li class="tab"><a href="/index.html">Home</a></li>
+                                        <li class="current"><a href="/gallery.html">Photo Gallery</a></li>
+                                        <li class="tab"><a href="/videos.html">Videos</a></li>
+                                        <li class="tab"><a href="/about.html">About</a></li>
+                                        <li class="tab"><a href="/contact.html">Contact</a></li>
+                                    </ul>
+                                </nav>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+
+        <h2>Gallery</h2>
+
+        <script type="text/javascript">
+            $(document).ready(function () {
+                // Call gallery for each folder
+                CreateGallery("divRaptors", "raptors_small");
+                CreateGallery("divOwls", "owls_small");
+                CreateGallery("divWaders", "waders_small");
+                CreateGallery("divBulbuls", "bulbuls_small");
+                CreateGallery("divFlycatchers", "flycatchers_small");
+                CreateGallery("divFrogmouth", "frogmouth_small");
+                CreateGallery("divKingfishers", "kingfishers_small");
+                CreateGallery("divMisc", "misc_small");
+                CreateGallery("divOdkf", "odkf_small");
+                CreateGallery("divStorks", "storks_small");
+                CreateGallery("divTrogon", "trogon_small");
+                CreateGallery("divOthers", "others_small");
+                CreateGallery("divWoodpecker", "woodpecker_small");
+            });
+
+            function CreateGallery(divId, folderName) {
+                $.getJSON("images.json", function (data) {
+                    if (data[folderName]) {
+                        data[folderName].forEach(function (item) {
+                            let itemURL = "../gallery/small/" + folderName + "/" + item;
+                            $("#" + divId).append(`<img src="${itemURL}" class="all studio" />`);
+                        });
+                    }
+                });
+            }
+
+            function openFile(file) {
+                var extension = file.substr((file.lastIndexOf('.') + 1));
+                switch (extension) {
+                    case 'jpg':
+                    case 'png':
+                    case 'gif':   // the alert ended with pdf instead of gif.
+                    case 'zip':
+                    case 'rar':
+                    case 'pdf':
+                    case 'php':
+                    case 'doc':
+                    case 'docx':
+                    case 'xls':
+                    case 'xlsx':
+                        return true;
+                        break;
+                    default:
+                        return false;
+                }
+            };
+        </script>
+
+
+        <div class="main">
+            <!--=====================Content======================-->
+            <section class="content">
+                <div class="container">
+                    <div class="gallery gall__1">
+                        <div class="row">
+                            <div class="grid_4">
+                                <h3>Birds</h3>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="grid_4">
+                                <a href="owls.html" class="gal1_item">
+                                    <div class="albums-tab">
+                                        <div class="albums-tab-thumb sim-anim-1" id="divOwls">
+                                        </div>
+                                        <div class="albums-tab-text"> <h3>Owls</h3></div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid_4">
+                                <a href="raptors.html" class="gal1_item">
+                                    <div class="albums-tab">
+                                        <div class="albums-tab-thumb sim-anim-2" id="divRaptors">
+                                        </div>
+                                        <div class="albums-tab-text"> <h3>Raptors</h3></div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid_4">
+                                <a href="waders.html" class="gal1_item">
+                                    <div class="albums-tab">
+                                        <div class="albums-tab-thumb sim-anim-9" id="divWaders">
+                                        </div>
+                                        <div class="albums-tab-text"> <h3>Waders</h3></div>
+                                    </div>
+                                </a>
+                            </div>
+
+
+                            <div class="clear"></div>
+                            <div class="grid_4">
+                                <a href="bulbuls.html" class="gal1_item">
+                                    <div class="albums-tab">
+                                        <div class="albums-tab-thumb sim-anim-2" id="divBulbuls">
+                                        </div>
+                                        <div class="albums-tab-text"> <h3>Bulbuls</h3></div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid_4">
+                                <a href="flycatchers.html" class="gal1_item">
+                                    <div class="albums-tab">
+                                        <div class="albums-tab-thumb sim-anim-3" id="divFlycatchers">
+                                        </div>
+                                        <div class="albums-tab-text"> <h3>Flycatchers</h3></div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid_4">
+                                <a href="kingfishers.html" class="gal1_item">
+                                    <div class="albums-tab">
+                                        <div class="albums-tab-thumb sim-anim-5" id="divKingfishers">
+                                        </div>
+                                        <div class="albums-tab-text"> <h3>Kingfishers</h3></div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid_4">
+                                <a href="woodpecker.html" class="gal1_item">
+                                    <div class="albums-tab">
+                                        <div class="albums-tab-thumb sim-anim-1" id="divWoodpecker">
+                                        </div>
+                                        <div class="albums-tab-text"> <h3>Woodpeckers</h3></div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid_4">
+                                <a href="storks.html" class="gal1_item">
+                                    <div class="albums-tab">
+                                        <div class="albums-tab-thumb sim-anim-2" id="divStorks">
+                                        </div>
+                                        <div class="albums-tab-text"> <h3>Storks</h3></div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid_4">
+                                <a href="odkf.html" class="gal1_item">
+                                    <div class="albums-tab">
+                                        <div class="albums-tab-thumb sim-anim-5" id="divOdkf">
+                                        </div>
+                                        <div class="albums-tab-text"> <h3>Oriental Dwarf Kingfisher</h3></div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid_4">
+                                <a href="frogmouth.html" class="gal1_item">
+                                    <div class="albums-tab">
+                                        <div class="albums-tab-thumb sim-anim-6" id="divFrogmouth">
+                                        </div>
+                                        <div class="albums-tab-text"> <h3>Frougmouth</h3></div>
+                                    </div>
+                                </a>
+                            </div>
+
+
+                            <div class="grid_4">
+                                <a href="misc.html" class="gal1_item">
+                                    <div class="albums-tab">
+                                        <div class="albums-tab-thumb sim-anim-3" id="divMisc">
+                                        </div>
+                                        <div class="albums-tab-text"> <h3>Other Birds</h3></div>
+                                    </div>
+                                </a>
+                            </div>
+
+
+                            <div class="grid_4">
+                                <a href="trogon.html" class="gal1_item">
+                                    <div class="albums-tab">
+                                        <div class="albums-tab-thumb sim-anim-7" id="divTrogon">
+                                        </div>
+                                        <div class="albums-tab-text"> <h3>Trogon</h3></div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid_4">
+                                <a href="others.html" class="gal1_item">
+                                    <div class="albums-tab">
+                                        <div class="albums-tab-thumb sim-anim-8" id="divOthers">
+                                        </div>
+                                        <div class="albums-tab-text"> <h3>Miscellaneous Images</h3></div>
+                                    </div>
+                                </a>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+
+
+
+        <hr />
+        <footer>
+            <span class="brand">Flying Wonder</span> &copy; <span id="copyright-year"></span> | <a href="#">All rights reserved</a>
+        </footer>
+    </div>
+</body>
+</html>

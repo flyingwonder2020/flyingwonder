@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+<url>
+  <loc>http://www.flyingwonder.com/</loc>
+  <lastmod>2021-02-05T05:07:47+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>http://www.flyingwonder.com/gallery</loc>
+  <lastmod>2021-02-05T05:07:47+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.flyingwonder.com/videos</loc>
+  <lastmod>2021-02-05T05:07:47+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.flyingwonder.com/about</loc>
+  <lastmod>2021-02-05T05:07:47+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.flyingwonder.com/contact</loc>
+  <lastmod>2021-02-05T05:07:47+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.flyingwonder.com/gallery/owls</loc>
+  <lastmod>2021-02-05T05:07:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.flyingwonder.com/gallery/raptors</loc>
+  <lastmod>2021-02-05T05:07:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.flyingwonder.com/gallery/waders</loc>
+  <lastmod>2021-02-05T05:07:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.flyingwonder.com/gallery/bulbuls</loc>
+  <lastmod>2021-02-05T05:07:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.flyingwonder.com/gallery/flycatchers</loc>
+  <lastmod>2021-02-05T05:07:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.flyingwonder.com/gallery/kingfishers</loc>
+  <lastmod>2021-02-05T05:07:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.flyingwonder.com/gallery/woodpecker</loc>
+  <lastmod>2021-02-05T05:07:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.flyingwonder.com/gallery/storks</loc>
+  <lastmod>2021-02-05T05:07:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.flyingwonder.com/gallery/odkf</loc>
+  <lastmod>2021-02-05T05:07:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.flyingwonder.com/gallery/frogmouth</loc>
+  <lastmod>2021-02-05T05:07:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.flyingwonder.com/gallery/misc</loc>
+  <lastmod>2021-02-05T05:07:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.flyingwonder.com/gallery/trogon</loc>
+  <lastmod>2021-02-05T05:07:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.flyingwonder.com/gallery/others</loc>
+  <lastmod>2021-02-05T05:07:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>
