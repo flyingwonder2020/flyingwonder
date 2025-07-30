@@ -1,0 +1,242 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> About | Flying Wonder</title>
+    <meta name="description" content="Birding enthusiast in Mangaluru, passionate about photography, loves to travel and explore new places." />
+
+    <meta property="og:url" content="http://www.flyingwonder.com" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content= "Birding Mangalore, Traveling Photography in Coastal Karnataka" />
+    <meta property="og:description" content="Birding enthusiast in Mangaluru, passionate about photography, loves to travel and explore new places." />
+    <meta property="og:image" content="http://www.flyingwonder.com/images/slide.jpg" />
+
+    <meta name="format-detection" content="telephone=no">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/stuck.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/touchTouch.css">
+    <link rel="stylesheet" href="css/camera.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="css/Icomoon/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/main.css" rel="stylesheet" type="text/css" />
+    <link href="css/sim-prev-anim.css" rel="stylesheet" type="text/css" />
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-migrate-1.1.1.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/superfish.js"></script>
+    <script src="js/jquery.equalheights.js"></script>
+    <script src="js/jquery.mobilemenu.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/tmStickUp.js"></script>
+    <script src="js/jquery.ui.totop.js"></script>
+    <script src="js/touchTouch.jquery.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/sForm.js"></script>
+    <script src="js/camera.js"></script>
+    <script>
+        $(document).ready(function () {
+            jQuery('#camera_wrap').camera({
+                loader: false,
+                pagination: false,
+                minHeight: '200',
+                thumbnails: false,
+                height: '39,0625%',
+                caption: true,
+                navigation: true,
+                fx: 'mosaic'
+            });
+            var owl = $("#owl");
+            owl.owlCarousel({
+                items: 7, //10 items above 1000px browser width
+                itemsDesktop: [995, 5], //5 items between 1000px and 901px
+                itemsDesktopSmall: [767, 3], // betweem 900px and 601px
+                itemsTablet: [700, 3], //2 items between 600 and 0
+                itemsMobile: [479, 2], // itemsMobile disabled - inherit from itemsTablet option
+                navigation: true,
+            });
+            $().UItoTop({ easingType: 'easeOutQuart' });
+            $('#stuck_container').tmStickUp({});
+            $('.gallery a.gal_item').touchTouch();
+            var path = location.pathname;
+            var current = path.split("/").pop();
+            $('.tab a').each(function () {
+                var $this = $(this);
+                if (current !== "") {
+                    if ($this.attr('href') != undefined) {
+                        //    if ($this.attr('name').indexOf(current) !== -1) {
+                        if ($this.attr('href').toLowerCase().indexOf(current.toLowerCase()) != -1) {
+                            $(".tab").removeClass("current");
+                            $(this).closest('li').addClass('current');
+                            $this.addClass('current');
+                        }
+                    }
+                }
+                else {
+                    if ($this.attr('href').toLowerCase() == "/home") {
+                        $(".tab").removeClass("current");
+                        $(this).closest('li').addClass('current');
+                        $this.addClass('current');
+                    }
+                }
+            });
+
+        });
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7ZBDRN0BP1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-7ZBDRN0BP1');
+    </script>
+</head>
+<body>
+    <div class="container body-content">
+        <header>
+            <div id="stuck_container">
+                <div class="container">
+                    <div class="row">
+                        <div class="grid_12">
+                            <h1>
+                                <a href="/home">
+                                    <img class="logo" src="images/logo.png" alt="Flying Wonder">
+                                </a>
+                            </h1>
+                            <div class="menu_block">
+                                <nav class="horizontal-nav full-width horizontalNav-notprocessed">
+                                    <ul class="sf-menu">
+                                        <li class="tab"><a href="/index.html">Home</a></li>
+                                        <li class="tab"><a href="/gallery.html">Photo Gallery</a></li>
+                                        <li class="tab"><a href="/videos.html">Videos</a></li>
+                                        <li class="current"><a href="/about.html">About</a></li>
+                                        <li class="tab"><a href="/contact.html">Contact</a></li>
+                                    </ul>
+                                </nav>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+
+
+
+
+
+
+
+
+        <h2> "About"</h2>
+        <div class="row">
+            <div class="grid_4">
+                <h3>Personal Life</h3>
+            </div>
+            <div class="clear"></div>
+            <div class="grid_4">
+                <p>I am a husband to a beautiful young lady(Swathi) and father of a little mischievous boy(Dhruv).</p>
+            </div>
+            <div class="grid_5 preffix_1">
+                <img src="about/fam.jpg" alt="">
+            </div>
+            <div class="clear"></div>
+            <div class="grid_4">
+                <h3 class="head1">Education & Professional Career</h3>
+            </div>
+            <div class="clear"></div>
+            <div class="grid_4">
+                <p>I have completed my engineering from Canara Engg college in Electronics and Comm.</p>
+                <p>IT professional working as a Project Lead at Bix bytes solutions.</p>
+            </div>
+
+            <div class="grid_5 preffix_1">
+                <img src="about/office.jpg" alt="">
+            </div>
+
+            <div class="clear"></div>
+            <div class="grid_4">
+                <h3 class="head1">How it started?</h3>
+            </div>
+            <div class="clear"></div>
+            <div class="grid_4">
+                <p>
+                    I was interested in photography since I was very young and could only afford to buy a camera after graduating. My fist camera was a Fuji bridge camera which had all the settings to play with.
+                    learned a lot of things in this camera. Got my first DSLR Canon 1100d after using fuji for a year.
+                    With 18-55 kit lens got a 55-250 Zoom lens. 55-250 Zoom lens gave amazing results.
+                    With 250mm lens started clicking birds, insects and nature around me. This is how I developed interest in birds initially. After exploring a few cameras’ I am currently settled with Canon 80D and Tamron 150-600 lens.
+                </p>
+
+
+            </div>
+            <div class="grid_5 preffix_1">
+                <img src="about/firstcam.jpg" alt="" style="padding-bottom:10px">
+                <img src="about/birding1.jpg" alt="">
+            </div>
+            <div class="clear"></div>
+            <div class="grid_4">
+                <h3 class="head1">Birding</h3>
+            </div>
+            <div class="clear"></div>
+            <div class="grid_4">
+                <p>
+                    Met a Group of wonderful people like Arnold Sir, Vivek and Roshan who were already into birding.
+                    Arnold Sir has a vast birding experience and a treasure of knowledge which he shares with everyone.
+                    Its always a pleasure birding with him and other members of our team.
+                </p>
+            </div>
+            <div class="grid_5 preffix_1">
+                <img src="about/birding2.jpg" alt="" style="padding-bottom:10px">
+            </div>
+
+            <div class="grid_4">
+                <p>
+                    Then I met my buddy Mr. Derrel Pinto almost after 10 years.
+                    We were buddies since Pre university days and birding has brought us together once again.
+                </p>
+
+            </div>
+            <div class="grid_5 preffix_1">
+                <img src="about/birding3.jpg" alt="" style="padding-bottom:10px">
+            </div>
+            <div class="grid_4">
+                <p>
+                    While working at glowtouch technologies met a wonderful person Mr. Rajith Shetty. We both had  a passion for photography and loved clicking birds.
+                    We would travel on weekends in search of birds and would enjoy being close to Nature. Unfortunetly I lost my dear friend Rajith Sir in year 2020.
+                    Hope you are in a better place sir and will always be missed.
+                </p>
+            </div>
+            <div class="grid_5 preffix_1">
+                <img src="about/birding4.jpg" alt="" style="padding-bottom:10px">
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <hr />
+        <footer>
+            <span class="brand">Flying Wonder</span> &copy; <span id="copyright-year"></span> | <a href="#">All rights reserved</a>
+        </footer>
+    </div>
+</body>
+</html>
